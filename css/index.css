@@ -144,6 +144,64 @@ section {
     background-color: var(--accent-color);
 }
 
+.about-cards {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2rem;
+    flex: 1 1 300px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.about-card h3 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+    color: var(--primary-color);
+}
+
+.about-card p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.about-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(31, 38, 135, 0.5);
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.education-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* Removed box-shadow as requested */
+    box-shadow: none;
+}
+
+.education-info h4 {
+    margin: 0 0 0.25rem 0;
+    color: var(--primary-color);
+}
+
+.education-info p {
+    margin: 0.1rem 0;
+}
+
 .about-section h2,
 .skills-section h2,
 .projects-section h2,
@@ -156,8 +214,9 @@ section {
 
 /* Skills */
 .skills-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1rem;
     list-style: none;
     padding: 0;
@@ -170,13 +229,15 @@ section {
     text-align: center;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     perspective: 1000px;
+    min-width: 250px;
+    flex: 1 1 auto;
 }
 
 /* Flip Card */
 .flip-card {
     background-color: transparent;
     width: 100%;
-    height: 200px;
+    height: 240px;
     perspective: 1000px;
     cursor: pointer;
 }
@@ -201,7 +262,7 @@ section {
 .flip-card-front {
     background-color: var(--primary-color);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .flip-card-front i {
