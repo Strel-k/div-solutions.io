@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css" />
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo"><i class="fas fa-code"></i> div's portfolio</a>
+                <ul class="nav-links">
+                    <li><a href="#hero"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
+                    <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <h1>Hello, I am div </h1>
+                <p>I'm a passionate web developer creating modern and responsive websites.</p>
+                <a href="#projects" class="btn-primary">View My Work</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a web developer with experience in building modern websites using HTML, CSS, JavaScript, and PHP.
+                    I enjoy creating clean, user-friendly, and performant web applications.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section fade-in">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-html5" style="font-size: 3rem;"></i>
+                                <p>HTML5 &amp; CSS3</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Used for structuring and styling all my web projects, including this portfolio. Implemented responsive layouts and modern CSS features like Flexbox and Grid.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-js-square" style="font-size: 3rem;"></i>
+                                <p>JavaScript (ES6+)</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Applied for interactive features like theme toggle, smooth scrolling, and animations. Used in projects for dynamic content and user interactions.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-php" style="font-size: 3rem;"></i>
+                                <p>PHP &amp; Laravel</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Developed backend for web applications, handling server-side logic, database interactions, and API endpoints in Laravel projects.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-mobile-alt" style="font-size: 3rem;"></i>
+                                <p>Responsive Design</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Ensured all websites work seamlessly across devices using media queries, flexible layouts, and mobile-first approach.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-git-alt" style="font-size: 3rem;"></i>
+                                <p>Git &amp; Version Control</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Managed project versions, collaborated with teams, and maintained code history for all development projects.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-plug" style="font-size: 3rem;"></i>
+                                <p>API</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Designed and integrated RESTful APIs to enable communication between frontend and backend services.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-brain" style="font-size: 3rem;"></i>
+                                <p>OpenAI</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Utilized OpenAI APIs for natural language processing and AI-powered features in projects.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-python" style="font-size: 3rem;"></i>
+                                <p>Python</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Developed scripts and backend services using Python for automation and data processing.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-code" style="font-size: 3rem;"></i>
+                                <p>C/C++</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Implemented performance-critical components and algorithms in C and C++.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-java" style="font-size: 3rem;"></i>
+                                <p>Java</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Developed object-oriented applications and enterprise solutions using Java.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-server" style="font-size: 3rem;"></i>
+                                <p>Django</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Built robust web applications and APIs using the Django framework.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-database" style="font-size: 3rem;"></i>
+                                <p>MySQL</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Designed and managed relational databases using MySQL for various projects.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-database" style="font-size: 3rem;"></i>
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Implemented advanced database solutions and optimizations using PostgreSQL.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section fade-in">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>CalmnConnect: Mental Health Websie for OSA</h3>
+                        <p>A modern Wenb Application that utilizes OpenAI for feedback, Websocket for live session conferences, and utilizes Python Django for its backend.</p>
+                        <p><strong>Technologies:</strong> OpenAI, Python, Django, HTML5, CSS3, JavaScript, WebSocket, API</p>
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>B-Cash: E Wallet Web Application</h3>
+                        <p>A modern Web E Wallet Application that utilizes facial recognition that matches the face of the user's face via camera and compares them with the ID they present. Utilized MySQL for its backend.</p>
+                        <p><strong>Technologies:</strong> Facial Recognition, MySQL, HTML5, CSS3, JavaScript, API</p>
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </article>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section fade-in">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; Powered by div. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
