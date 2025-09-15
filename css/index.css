@@ -26,11 +26,23 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
     transition: var(--transition);
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .container {
@@ -105,6 +117,16 @@ section {
     text-align: center;
 }
 
+.profile-image {
+    margin-bottom: 2rem;
+}
+
+.profile-image i {
+    font-size: 5rem;
+    color: white;
+    opacity: 0.9;
+}
+
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -138,14 +160,68 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     list-style: none;
+    padding: 0;
 }
 
 .skills-list li {
     background-color: var(--background-color);
     padding: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    perspective: 1000px;
+}
+
+/* Flip Card */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 200px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-front, .flip-card-back {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.6s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.flip-card-front {
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 1.2rem;
+}
+
+.flip-card-front i {
+    margin-bottom: 1rem;
+}
+
+.flip-card-back {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    transform: rotateY(180deg);
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.flip-card:hover .flip-card-front {
+    transform: rotateY(180deg);
+}
+
+.flip-card:hover .flip-card-back {
+    transform: rotateY(0deg);
 }
 
 /* Projects */
