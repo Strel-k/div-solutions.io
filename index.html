@@ -7,6 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/index.css" />
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -167,21 +169,7 @@
         <section id="projects" class="projects-section fade-in">
             <div class="container">
                 <h2>Projects</h2>
-                <div class="projects-grid">
-                    <article class="project-card">
-                        <h3>CalmnConnect: Mental Health Websie for OSA</h3>
-                        <p>A modern Wenb Application that utilizes OpenAI for feedback, Websocket for live session conferences, and utilizes Python Django for its backend.</p>
-                        <p><strong>Technologies:</strong> OpenAI, Python, Django, HTML5, CSS3, JavaScript, WebSocket, API</p>
-                        <a href="https://github.com/Strel-k/CalmConnect-Mental-Health" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </article>
-                    <article class="project-card">
-                        <h3>B-Cash: E Wallet Web Application</h3>
-                        <p>A modern Web E Wallet Application that utilizes facial recognition that matches the face of the user's face via camera and compares them with the ID they present. Utilized MySQL for its backend.</p>
-                        <p><strong>Technologies:</strong> Facial Recognition, MySQL, HTML5, CSS3, JavaScript, API</p>
-                        <a href="https://github.com/Strel-k/Bank-Cash-AJAX-Project" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
-                    </article>
-                
-                </div>
+                <div id="projects-root"></div>
             </div>
         </section>
 

@@ -1,7 +1,6 @@
 // JavaScript for smooth scrolling, theme toggle, hamburger menu, and animations
 
 document.addEventListener('DOMContentLoaded', () => {
-    // Smooth scrolling for anchor links
     const links = document.querySelectorAll('a[href^="#"]');
     links.forEach(link => {
         link.addEventListener('click', e => {
@@ -11,13 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetElement) {
                 targetElement.scrollIntoView({ behavior: 'smooth' });
             }
-            // Close mobile menu after clicking a link
             const navLinks = document.querySelector('.nav-links');
             navLinks.classList.remove('open');
         });
     });
 
-    // Theme toggle button
     const themeToggleBtn = document.querySelector('.theme-toggle');
     themeToggleBtn.addEventListener('click', () => {
         if (document.documentElement.getAttribute('data-theme') === 'dark') {
@@ -63,7 +60,41 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe all elements with fade-in class
     const fadeElements = document.querySelectorAll('.fade-in');
     fadeElements.forEach(el => observer.observe(el));
+
+    const projects = [
+        {
+            title: "CalmnConnect: Mental Health Websie for OSA",
+            description: "A modern Wenb Application that utilizes OpenAI for feedback, Websocket for live session conferences, and utilizes Python Django for its backend.",
+            technologies: "OpenAI, Python, Django, HTML5, CSS3, JavaScript, WebSocket, API",
+            link: "https://github.com/Strel-k/CalmConnect-Mental-Health"
+        },
+        {
+            title: "B-Cash: E Wallet Web Application",
+            description: "A modern Web E Wallet Application that utilizes facial recognition that matches the face of the user's face via camera and compares them with the ID they present. Utilized MySQL for its backend.",
+            technologies: "Facial Recognition, MySQL, HTML5, CSS3, JavaScript, API",
+            link: "https://github.com/Strel-k/Bank-Cash-AJAX-Project"
+        }
+    ];
+
+    function ProjectCard({ project }) {
+        return React.createElement('article', { className: 'project-card' },
+            React.createElement('h3', null, project.title),
+            React.createElement('p', null, project.description),
+            React.createElement('p', null, React.createElement('strong', null, 'Technologies:'), ' ' + project.technologies),
+            React.createElement('a', { href: project.link, className: 'btn-secondary', target: '_blank' },
+                React.createElement('i', { className: 'fas fa-external-link-alt' }), ' View Project'
+            )
+        );
+    }
+
+    function Projects() {
+        return React.createElement('div', { className: 'projects-grid' },
+            projects.map((project, index) => React.createElement(ProjectCard, { key: index, project: project }))
+        );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('projects-root'));
+    root.render(React.createElement(Projects));
 });
