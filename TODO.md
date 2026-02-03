@@ -1,4 +1,3 @@
-- [x] Add React and ReactDOM scripts to index.html head
-- [x] Replace projects-grid in index.html with <div id="projects-root"></div>
-- [x] Update js/script.js to include React code for dynamic projects rendering
-- [x] Test the integration
+- [x] Edit js/script.js to add React rendering code to mount the App component to #root
+- [x] Run npm run build to compile JSX components
+- [ ] Test the application by running live server and checking if elements appear

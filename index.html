@@ -3,12 +3,10 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>divsolutions</title>
+    <title>My Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/index.css" />
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script defer src="js/script.js"></script>
 </head>
 <body>
@@ -22,11 +20,8 @@
                     <li><a href="#skills"><i class="fas fa-tools"></i> Skills</a></li>
                     <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
                     <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                    <li>
-                        <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i> Dark Mode</button>
-                    </li>
                 </ul>
-                <button class="hamburger"><i class="fas fa-bars"></i></button>
+                <button class="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-moon"></i></button>
             </div>
         </nav>
     </header>
@@ -34,39 +29,22 @@
     <main>
         <section id="hero" class="hero-section">
             <div class="container hero-content">
-               
+                <div class="profile-image">
+                    <i class="fas fa-user-circle"></i>
+                </div>
                 <h1>Hello, I am div </h1>
-                <p>I'm a passionate web developer creating modern, responsive, and powerful websites.</p>
+                <p>I'm a passionate web developer creating modern and responsive websites.</p>
                 <a href="#projects" class="btn-primary">View My Work</a>
             </div>
         </section>
 
-
-
-        <section id="about" class="bio-section fade-in">
-            <div class="container bio-content">
-                <div class="bio-text">
-                          <div class="bio-image">
-                    <img src="img/no-whitebackground-Photoroom.png" alt="Profile Picture">
-                </div>
-                    <h2>About Me</h2>
-                    <p>I’m an IT student passionate about programming, web development, and creative problem-solving. Skilled in Java, PHP, JavaScript, Python (Django), C, and HTML, I’ve worked on diverse projects that turn theory into real-world solutions — many of which are on my GitHub. Outside of coding, I bring a unique edge with my narrator-style voice, perfect for voiceovers and creative work. Always eager to learn, collaborate, and contribute to innovative tech projects.</p>
-                    <p>I also like the color blue.</p>
-                   
-                    <h3>Education</h3>
-                    <p class="university-logos">
-                        <a href="https://www.clsu.edu.ph" target="_blank" rel="noopener noreferrer">
-                            <img src="img/clsu-logo-green.png" alt="CLSU Logo" class="university-logo" title="Central Luzon State University, Nueva Ecija, Philippines" />
-                        </a>
-                        <a href="https://www.wup.edu.ph" target="_blank" rel="noopener noreferrer">
-                            <img src="img/wup.png" alt="WUP Logo" class="university-logo wup-logo" title="Wesleyan University - Philippines, Cabanatuan City, Nueva Ecija" />
-                        </a>
-                    </p>
-                    <a href="https://www.linkedin.com/in/f-dave-damon-v-pararuan-6100b8282/" class="btn-secondary" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                                    <a href="https://github.com/Strel-k" class="btn-secondary" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-
-                </div>
-          
+        <section id="about" class="about-section fade-in">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>
+                    I am a web developer with experience in building modern websites using HTML, CSS, JavaScript, and PHP.
+                    I enjoy creating clean, user-friendly, and performant web applications.
+                </p>
             </div>
         </section>
 
@@ -132,11 +110,55 @@
                     <li>
                         <div class="flip-card">
                             <div class="flip-card-front">
+                                <i class="fas fa-plug" style="font-size: 3rem;"></i>
+                                <p>API</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Designed and integrated RESTful APIs to enable communication between frontend and backend services.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-brain" style="font-size: 3rem;"></i>
+                                <p>OpenAI</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Utilized OpenAI APIs for natural language processing and AI-powered features in projects.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
                                 <i class="fab fa-python" style="font-size: 3rem;"></i>
                                 <p>Python</p>
                             </div>
                             <div class="flip-card-back">
                                 <p>Developed scripts and backend services using Python for automation and data processing.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-code" style="font-size: 3rem;"></i>
+                                <p>C/C++</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Implemented performance-critical components and algorithms in C and C++.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-java" style="font-size: 3rem;"></i>
+                                <p>Java</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Developed object-oriented applications and enterprise solutions using Java.</p>
                             </div>
                         </div>
                     </li>
@@ -162,6 +184,39 @@
                             </div>
                         </div>
                     </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-database" style="font-size: 3rem;"></i>
+                                <p>PostgreSQL</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Implemented advanced database solutions and optimizations using PostgreSQL.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fab fa-microsoft" style="font-size: 3rem;"></i>
+                                <p>C#</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Developed desktop and web applications using C# and .NET framework for enterprise solutions.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="flip-card">
+                            <div class="flip-card-front">
+                                <i class="fas fa-database" style="font-size: 3rem;"></i>
+                                <p>Microsoft SQL</p>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Designed and managed enterprise databases using Microsoft SQL Server for scalable applications.</p>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -169,25 +224,34 @@
         <section id="projects" class="projects-section fade-in">
             <div class="container">
                 <h2>Projects</h2>
-                <div id="projects-root"></div>
-            </div>
-        </section>
-
-        <section id="badges" class="badges-section fade-in">
-            <div class="container">
-                <h2>Certifications & Badges</h2>
-                <div class="badges-container">
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="be0707b5-642b-44b2-9da2-ab853066a3d8" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-                    <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="4c005ca1-109d-418c-8c7f-201e7707b4b1" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <h3>CalmnConnect: Mental Health Websie for OSA</h3>
+                        <p>A modern Wenb Application that utilizes OpenAI for feedback, Websocket for live session conferences, and utilizes Python Django for its backend.</p>
+                        <p><strong>Technologies:</strong> OpenAI, Python, Django, HTML5, CSS3, JavaScript, WebSocket, API</p>
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>B-Cash: E Wallet Web Application</h3>
+                        <p>A modern Web E Wallet Application that utilizes facial recognition that matches the face of the user's face via camera and compares them with the ID they present. Utilized MySQL for its backend.</p>
+                        <p><strong>Technologies:</strong> Facial Recognition, MySQL, HTML5, CSS3, JavaScript, API</p>
+                        <a href="#" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </article>
+                    <article class="project-card">
+                        <h3>Bookstore WebApp</h3>
+                        <p>A comprehensive bookstore web application built with C# and Microsoft SQL Server. Features include book catalog management, user authentication, shopping cart functionality, and order processing.</p>
+                        <p><strong>Technologies:</strong> C#, Microsoft SQL Server, ASP.NET, HTML5, CSS3, JavaScript</p>
+                        <a href="https://github.com/Strel-k/Bookstore-WebApp" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View Project</a>
+                    </article>
+                
                 </div>
-                <a href="https://www.credly.com/users/f-dave-damon-v-pararuan/edit#credly" target="_blank" class="btn-secondary"><i class="fas fa-external-link-alt"></i> View on Credly</a>
             </div>
         </section>
 
         <section id="contact" class="contact-section fade-in">
             <div class="container">
                 <h2>Contact Me</h2>
-                <form action="https://formspree.io/f/xqadopwk" method="POST" class="contact-form">
+                <form action="#" method="POST" class="contact-form">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required />
 

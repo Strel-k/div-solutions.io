@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "main": "babel.config.js",
+  "scripts": {
+    "build": "babel components --out-dir js --presets @babel/preset-react",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Strel-k/div-solutions.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Strel-k/div-solutions.io/issues"
+  },
+  "homepage": "https://github.com/Strel-k/div-solutions.io#readme",
+  "description": "",
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  }
+}
